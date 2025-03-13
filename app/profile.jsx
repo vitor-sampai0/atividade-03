@@ -1,4 +1,4 @@
-import { View, Text, TextInput, Image } from "react-native";
+import { View, Text, TextInput, Image, Button } from "react-native";
 
 export default function Profile() {
   return (
@@ -11,17 +11,19 @@ export default function Profile() {
       />
       <View style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
         <View style={{ display: "flex", flexDirection: "row", alignItems: "baseline", gap: 10 }}>
-          <Text style={{fontSize: 25, color: "#6A5ACD"}}>Nome:</Text>
-          <Text style={{fontSize: 20, color: "#6495ED"}}>Fernanda Torres</Text>
+          <Text style={{fontSize: '30px', color: "#6A5ACD"}}>Nome:</Text>
+          <Text style={{fontSize: '30px', color: "#6495ED"}}>Fernanda Torres</Text>
         </View>
         <View style={{ display: "flex", flexDirection: "row", alignItems: "baseline", gap: 10 }}>
-          <Text style={{fontSize: 25, color: "#6A5ACD"}}>User:</Text>
-          <Text style={{fontSize: 20, color: "#6495ED"}}>Fernandinha69</Text>
+          <Text style={{fontSize: '30px', color: "#6A5ACD"}}>User:</Text>
+          <Text style={{fontSize: '30px', color: "#6495ED"}}>Fernandinha69</Text>
         </View>
       </View>
         <View style={{display: "flex", flexDirection: "column", alignItems: "center", marginTop: 20}}>
-      <Text style={{fontSize: 25, color: "#6495ED"}} >Descrição</Text>
+      <Text style={{fontSize: '30px', color: "#6495ED"}} >Descrição</Text>
+      <View style={{display: "flex", flexDirection: "column", alignItems: "center", gap: 20, marginTop: 10}}>
       <TextInput
+      placeholder="Sua Descrição"
         style={{
           height: 100,
           width: 300,
@@ -29,9 +31,16 @@ export default function Profile() {
           borderWidth: 1,
           borderRadius: 10,
           padding: 10,
+          textAlign: "center",
+          display: "flex",
         }}
         multiline
         numberOfLines={4}/>
+ 
+        <Button style={{
+          fontSize: '30px',
+        }} title="Salvar" color="#6A5ACD" />
+        </View>
       </View>
     </View>
   );

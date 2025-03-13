@@ -20,38 +20,38 @@ export default function Layout() {
         }}
         >
             <Tabs.Screen name="index"
-            options={{
-                title:"Home",
-                tabBarIcon: ({color, size}) => 
-                ( <Ionicons name="home" color={color} size={size} />    
-                ),
-            }}
-        />
-        <Tabs.Screen name="profile"
-            options={{
-                title:"Perfil",
-                tabBarIcon: ({color, size}) => 
-                ( <Ionicons name="person" color={color} size={size} />    
-                ),
-            }}
+                options={{
+                    title: "Home",
+                    tabBarIcon: ({ color, size }) =>
+                    (<Ionicons name="home" color={color} size={size} />
+                    ),
+                }}
+            />
+            <Tabs.Screen name="profile"
+                options={{
+                    title: "Perfil",
+                    tabBarIcon: ({ color, size }) =>
+                    (<Ionicons name="person" color={color} size={size} />
+                    ),
+                }}
             />
 
 
-        <Tabs.Screen name="new-message"
-            options={{
-                title:"noticias",
-                tabBarIcon: ({color, size}) => 
-                ( <Ionicons name="new" color={color} size={size} />    
-                ),
-            }}
+            <Tabs.Screen name="new"
+                options={{
+                    title: "Noticias",
+                    tabBarIcon: ({ color, size }) =>
+                    (<Ionicons name="newspaper-outline" color={color} size={size} />
+                    ),
+                }}
             />
 
-            
 
 
 
 
-            </Tabs>
+
+        </Tabs>
 
     )
 }
